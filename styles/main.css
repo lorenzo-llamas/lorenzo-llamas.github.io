@@ -1,14 +1,16 @@
+/* master styles */
+
 /* overiding margin making the lines vanish*/
 body {
     margin: 0px;
 }
-/*nmaking of the grid */
-
+/*nmaking of the grid to allign the items*/
+/* 1fr is = to 100% of the space to take up for the navigational box */ 
 .container {
     display: grid;
     grid-template-columns: 1fr;
 }
-/* creating the navigation bar on top of page */
+/* creating the navigation styles bar on top of page */
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -44,3 +46,60 @@ body {
     color: black;
 }
 /* navigation bar is completed */ 
+/* portfolio styles */ 
+/* portfolio colum 1fr x3 = 1 full colum devided by 3 */
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* this allows us to position the itm were we want it */
+.portfolio-item-wrapper {
+    position: relative;
+}
+/*styling the background like the cover and related items :) */ 
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover; /* this will make all the images fit into colum side by side*/ 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* positioning the text into the background */
+.img-text-wrapper {
+    position: absolute; /* this positions the text at the very top */
+    top: 0;
+    display: flex; /* centering the item */
+    flex-direction: column;
+    justify-content: center; /* allining them from left to right */
+    align-items: center; /* alligning from top to bottom */
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* positioning the log on to the background image */
+
+.log-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+
+
+img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: chartreuse;
+}
+
+/* animation to darken the background */ 
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
