@@ -1,7 +1,46 @@
-.placeholder {
-    background-color: red;
+/* overiding margin making the lines vanish*/
+body {
+    margin: 0px;
+}
+/*nmaking of the grid */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* creating the navigation bar on top of page */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
 }
 
-.anotherClass {
-    background-color: royalblue;
+.left-side {
+    display: flex;
 }
+/* selecting all the items on the tree aka collection of all item that are stacked */
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+/* animation of fadding effect */
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: teal;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+/* fading in and out from two diffrent colors when the mouse is over the work (text)*/
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+/* fading in and out from two diffrent colors when the mouse is over the work (text)*/
+.nav-link-wrapper a:hover {
+    color: black;
+}
+/* navigation bar is completed */ 
