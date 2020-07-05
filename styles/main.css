@@ -90,7 +90,7 @@ img-text-wrapper .subtitle {
     transition: 1s;
     font-weight: 600;
     color: transparent;
-
+}
 
 img-text-wrapper:hover .subtitle {
     font-weight: 600;
