@@ -2,6 +2,7 @@
 body {
     font-family: cursive; 
     margin: 0px;
+    background-color: whitesmoke;
 }
 
 .container {
@@ -50,4 +51,22 @@ body {
   
   .nav-link-wrapper a:hover {
     color: black;
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .item{
+    background: yellowgreen;
+    color: white;
+    padding: 10px;
+  }
+  .item:nth-child(even){
+    background: yellow;
   }
