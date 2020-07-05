@@ -2,8 +2,7 @@
 body {
     margin: 0px;
 }
-/*nmaking of the grid to allign the items*/
-/* 1fr is = to 100% of the space to take up for the navigational box */ 
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -34,14 +33,6 @@ body {
     color: teal;
     text-decoration: none;
     transition: color 0.5s;
-}
-/* fading in and out from two diffrent colors when the mouse is over the work (text)*/
-.nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
-}
-/* fading in and out from two diffrent colors when the mouse is over the work (text)*/
-.nav-link-wrapper a:hover {
-    color: black;
 }
 
 .portfolio-items-wrapper {
