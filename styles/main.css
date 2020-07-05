@@ -1,6 +1,6 @@
 /* master styles */
 body {
-    font-family: cursive;
+    font-family: cursive; 
     margin: 0px;
 }
 
@@ -30,12 +30,28 @@ body {
     transition: border-bottom 0.5s;
 }
 
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
 .nav-link-wrapper a {
     color: teal;
     text-decoration: none;
     transition: color 0.5s;
 }
 
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+  }
+  
+  .nav-link-wrapper a:hover {
+    color: black;
+  }
+  
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
