@@ -45,9 +45,7 @@ body {
 .nav-link-wrapper a:hover {
     color: black;
 }
-/* navigation bar is completed */ 
-/* portfolio styles */ 
-/* portfolio colum 1fr x3 = 1 full colum devided by 3 */
+
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
