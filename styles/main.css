@@ -62,7 +62,7 @@ body {
     width: 40%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 200px);
     grid-auto-rows: 10px;
     grid-gap: 20px;
 
