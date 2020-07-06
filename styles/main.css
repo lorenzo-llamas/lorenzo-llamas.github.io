@@ -2,13 +2,9 @@
 body {
     font-family: cursive; 
     margin: 0px;
-    background-color: teal;
+    background-color: rgb(250, 255, 255);
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-}
 /* creating the navigation styles bar on top of page */
 .nav-wrapper {
     display: flex;
